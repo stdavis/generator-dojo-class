@@ -24,16 +24,16 @@ $ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-dojo-widget from npm, run:
+To install generator-dojo-class from npm, run:
 
 ```
-$ npm install -g generator-dojo-widget
+$ npm install -g generator-dojo-class
 ```
 
 Finally, initiate the generator:
 
 ```
-$ yo dojo-widget
+$ yo dojo-class
 ```
 
 ### Getting To Know Yeoman
