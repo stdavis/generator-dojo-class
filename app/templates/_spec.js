@@ -4,25 +4,24 @@ require([
 ], function(
     ClassUnderTest
 ) {
-
-    var testObject;
-
-    afterEach(function() {
-        if (testObject) {
-            if (testObject.destroy) {
-                testObject.destroy();
-            }
-
-            testObject = null;
-        }
-    });
-
     describe('<%= path %><%= className %>', function() {
-        describe('Sanity', function() {
-            beforeEach(function() {
-                testObject = new ClassUnderTest(null);
-            });
+        var testObject;
 
+        afterEach(function() {
+            if (testObject) {
+                if (testObject.destroy) {
+                    testObject.destroy();
+                }
+
+                testObject = null;
+            }
+        });
+
+        beforeEach(function() {
+            testObject = new ClassUnderTest(null);
+        });
+
+        describe('Sanity', function() {
             it('should create a <%= className %>', function() {
                 expect(testObject).toEqual(jasmine.any(ClassUnderTest));
             });
