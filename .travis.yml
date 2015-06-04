@@ -4,4 +4,11 @@ node_js:
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-dojo-widget' ]; then cd .. && eval "mv $currentfolder generator-dojo-widget" && cd generator-dojo-widget; fi
-
+sudo: false
+cache:
+  directories:
+    - node_modules
+notifications:
+    email:
+        on_success: change
+        on_failure: change
