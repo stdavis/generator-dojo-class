@@ -1,13 +1,13 @@
 require([
     '<%= path %><%= className %>'
 
-], function(
+], function (
     ClassUnderTest
 ) {
-    describe('<%= path %><%= className %>', function() {
+    describe('<%= path %><%= className %>', function () {
         var testObject;
 
-        afterEach(function() {
+        afterEach(function () {
             if (testObject) {
                 if (testObject.destroy) {
                     testObject.destroy();
@@ -17,12 +17,12 @@ require([
             }
         });
 
-        beforeEach(function() {
+        beforeEach(function () {
             testObject = new ClassUnderTest(null);
         });
 
-        describe('Sanity', function() {
-            it('should create a <%= className %>', function() {
+        describe('Sanity', function () {
+            it('should create a <%= className %>', function () {
                 expect(testObject).toEqual(jasmine.any(ClassUnderTest));
             });
         });

@@ -1,7 +1,7 @@
 define([
     'dojo/_base/declare'
 
-], function(
+], function (
     declare
 ) {
     return declare(null, {
@@ -15,7 +15,7 @@ define([
             // summary:
             //      description
             console.log('<%= consoleLog %>::constructor', arguments);
-        
+
         }
     });
 });
