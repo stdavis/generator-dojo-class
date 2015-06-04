@@ -20,13 +20,15 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "dojo class"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
     "chalk": "~0.4.0"
   },
   "devDependencies": {
+    "jscs": "^1.13.1",
     "mocha": "*"
   },
   "peerDependencies": {
